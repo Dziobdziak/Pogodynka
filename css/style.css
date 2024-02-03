@@ -1,0 +1,770 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(57, 51, 51);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+  position: relative;
+}
+main .navLeftBar {
+  z-index: 2;
+  height: 100vh;
+  width: 30%;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  background: black;
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+main .navLeftBar .logoBox {
+  height: 50%;
+  color: white;
+}
+main .navLeftBar .menuListBox {
+  height: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+main .navLeftBar .menuListBox ul li {
+  margin: 30px;
+  list-style: none;
+}
+main .navLeftBar .menuListBox ul li a {
+  text-decoration: none;
+  color: white;
+}
+main .leftMainDiv {
+  height: 100%;
+  width: 13%;
+  background: rgb(255, 255, 255);
+  background: black;
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .leftMainDiv .logoBox {
+  height: 50%;
+  color: white;
+}
+main .leftMainDiv .menuListBox {
+  height: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+main .leftMainDiv .menuListBox ul li {
+  margin: 30px;
+  list-style: none;
+}
+main .leftMainDiv .menuListBox ul li a {
+  text-decoration: none;
+  color: white;
+}
+main .centerMainDiv {
+  height: 100%;
+  width: 62%;
+  background-color: rgb(255, 255, 255);
+}
+main .centerMainDiv .centerHeader {
+  height: 15%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .centerMainDiv .centerHeader .centerHeaderLeft {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .centerMainDiv .centerHeader .centerHeaderLeft .spanDayOfWeek{
+  text-transform: capitalize;
+}
+main .centerMainDiv .centerHeader .centerHeaderRight {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+main .centerMainDiv .centerHeader .centerHeaderRight .togglerButton {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 1px;
+  top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main .centerMainDiv .centerHeader .centerHeaderRight .togglerButton .fa-bars {
+  color: black;
+}
+main .centerMainDiv .centerHeader .centerHeaderRight .togglerButton:hover {
+  cursor: pointer;
+}
+main .centerMainDiv .centerHeader .centerHeaderRight .search {
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 25px;
+  border: 3px solid black;
+  background-color: rgb(255, 255, 255);
+}
+main .centerMainDiv .centerHeader .centerHeaderRight .goBtn {
+  height: 50px;
+  width: 50px;
+  border: 3px solid black;
+  border-radius: 100px;
+  font-weight: bolder;
+  background-color: white;
+}
+main .centerMainDiv .centerMainContentDiv {
+  width: 100%;
+  height: 85%;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox {
+  height: 50%;
+  width: 100%;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .todayHeader {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain {
+  height: 45%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed, main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse {
+  width: 45%;
+  height: 90%;
+  border-radius: 6px;
+  background-color: rgb(229, 226, 226);
+  -webkit-box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+          box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed .windIcoBox {
+  font-size: 1.8rem;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse .rainChanseIcoBox {
+  font-size: 3.3rem;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv {
+  height: 45%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure, main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex {
+  width: 45%;
+  height: 90%;
+  border-radius: 6px;
+  background-color: rgb(229, 226, 226);
+  -webkit-box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+          box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure .pressureIcoBox {
+  font-size: 3rem;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex .uvIndexIcoBox {
+  font-size: 3rem;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox {
+  height: 50%;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .weatherForecastBox {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards .card {
+  width: 93%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+          box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+  background-color: rgb(229, 226, 226);
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards .card p span {
+  font-size: 3rem;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards .card .fa-face-grin-tongue-wink {
+  font-size: 4rem;
+}
+main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards .card .fa-face-grin-tongue-wink:hover {
+  -webkit-animation: wobble-hor-bottom 0.8s infinite;
+          animation: wobble-hor-bottom 0.8s infinite;
+}
+main .rightMainDiv {
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(170deg, rgb(239, 185, 37) 0%, rgb(0, 0, 0) 100%);
+  color: white;
+}
+main .rightMainDiv .rightHeaderBox {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .rightMainDiv .rightHeaderBox .cityNameBox .cityName {
+  text-transform: capitalize;
+}
+main .rightMainDiv .weatherAtTheMoment {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  gap: 20px;
+  padding: 0px 30px;
+}
+main .rightMainDiv .weatherAtTheMoment span {
+  font-size: 3rem;
+}
+main .rightMainDiv .weatherAtTheMoment .actualWeatherStatus {
+  text-transform: capitalize;
+}
+main .rightMainDiv .rightLastCards {
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main .rightMainDiv .rightLastCards .card {
+  width: 90%;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 6px;
+  height: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+main .rightMainDiv .rightLastCards .card span {
+  font-size: 2rem;
+}
+main .rightMainDiv .authorDiv {
+  height: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  background-color: black;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: bold;
+}
+main .rightMainDiv .authorDiv a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+main .rightMainDiv .authorDiv a:hover {
+  color: chartreuse;
+}
+
+@media (max-width: 1300px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  main .leftMainDiv {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    padding: 20px;
+  }
+  main .leftMainDiv .menuListBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .leftMainDiv .menuListBox ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1rem;
+  }
+  main .leftMainDiv .menuListBox ul li {
+    margin: 10px;
+  }
+  main .centerMainDiv {
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  main .centerMainDiv .centerHeader {
+    padding: 30px;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .todayHeader {
+    margin-bottom: 10px;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain {
+    margin-bottom: 20px;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed .windIcoBox {
+    font-size: 1.2rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse .rainChanseIcoBox {
+    font-size: 2.3rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv {
+    margin-bottom: 20px;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure .pressureIcoBox {
+    font-size: 2.3rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex .uvIndexIcoBox {
+    font-size: 2.3rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainSecondBox .forecastCards .card {
+    width: 90%;
+    gap: 20px;
+  }
+  main .rightMainDiv {
+    padding-top: 30px;
+    width: 100%;
+  }
+  main .rightMainDiv .weatherAtTheMoment {
+    margin-bottom: 20px;
+  }
+  main .rightMainDiv .rightLastCards {
+    gap: 30px;
+  }
+  main .rightMainDiv .authorDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 976px) {
+  main .leftMainDiv {
+    display: none;
+  }
+  main .centerMainDiv .centerHeader .centerHeaderRight .togglerButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .centerMainDiv .centerHeader .centerHeaderLeft {
+    font-size: 0.7rem;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed .windIcoBox {
+    font-size: 1.1rem;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse .rainChanseIcoBox {
+    font-size: 3.3rem;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .pressureUv {
+    height: 45%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure, main .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex {
+    width: 45%;
+    height: 90%;
+    border-radius: 6px;
+    background-color: rgb(229, 226, 226);
+    -webkit-box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+            box-shadow: 1px -1px 23px -7px rgb(66, 68, 90);
+  }
+  main .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure .pressureIcoBox {
+    font-size: 3rem;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  main .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex .uvIndexIcoBox {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  main .centerMainDiv .centerHeader {
+    padding: 30px 30px 30px 5px;
+    gap: 30px;
+  }
+  main .centerMainDiv .centerHeader .centerHeaderRight {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .centerMainDiv .centerHeader .centerHeaderRight .togglerButton {
+    top: 4px;
+    right: 21px;
+  }
+  main .centerMainDiv .centerHeader .centerHeaderRight .search {
+    height: 40px;
+    width: 80%;
+    font-size: 0.5rem;
+  }
+  main .centerMainDiv .centerHeader .centerHeaderRight .goBtn {
+    height: 40px;
+    width: 40px;
+  }
+  main .centerHeader .centerHeaderLeft {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 60%;
+  }
+  main .centerHeader .centerHeaderRight {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .centerHeader .centerHeaderRight .search {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 450px) {
+  main .navLeftBar .menuListBox {
+    font-size: 0.8rem;
+  }
+  main .navLeftBar {
+    font-size: 0.7rem;
+  }
+  main .centerHeader .centerHeaderRight .search {
+    font-size: 0.5rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse .rainChanseIcoBox {
+    font-size: 1.5rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex .uvIndexIcoBox {
+    font-size: 1.5rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure .pressureIcoBox {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  main .rightMainDiv .rightLastCards .card {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .windSpeed, main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .windRain .rainChanse {
+    font-size: 0.75rem;
+  }
+  main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .pressure, main .centerMainDiv .centerMainContentDiv .centerMainFirstBox .pressureUv .uvIndex {
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=style.css.map */

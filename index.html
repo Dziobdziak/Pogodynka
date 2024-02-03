@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Pogoda</title>
+    <script src="https://kit.fontawesome.com/600c21d011.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/tornado-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <main>
+        <nav class="navLeftBar active">
+            <div class="logoBox">
+                <span><i class="fa-solid fa-tornado"></i> YourWeather</span>
+            </div>
+            <div class="menuListBox">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i> Strona główna</a></li>
+                    <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> Mapa</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-pin-lock"></i> Twoje lokalizacje</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gears"></i> Ustawienia</a></li>
+                    <li><a href="#"><i class="fa-solid fa-code"></i> O twórcy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Wyloguj</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="leftMainDiv">
+            <div class="logoBox">
+                <span><i class="fa-solid fa-tornado"></i> YourWeather</span>
+            </div>
+            <div class="menuListBox">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i> Strona główna</a></li>
+                    <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> Mapa</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-pin-lock"></i> Twoje lokalizacje</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gears"></i> Ustawienia</a></li>
+                    <li><a href="#"><i class="fa-solid fa-code"></i> O twórcy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Wyloguj</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="centerMainDiv" id="centerMainDiv">
+            <div class="centerHeader">
+                <div class="centerHeaderLeft">
+                    <h1 class="monthAndYear"></h1>
+                    <p><span class="spanDayOfWeek"></span><span class="actualDay"></span>.<span class="actualMonth"></span>.<span class="actualYear"></span></p>
+                </div>
+                <div class="centerHeaderRight">
+                    <input type="text" name="" id="" class="search" placeholder="Podaj nazwę miasta" >
+                    <button class="goBtn">Go!</button>
+                    <div class="togglerButton">
+                        <a href="#centerMainDiv"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="centerMainContentDiv">
+                <div class="centerMainFirstBox">
+                    <div class="todayHeader"><h3>Dzisiaj</h3></div>
+                    <div class="windRain">
+                        <div class="windSpeed ">
+                            <div class="windIcoBox">
+                                <h1><i class="fa-solid fa-wind"></i></h1>
+                            </div>
+                            <div class="windInfoBox">
+                                <p>Prędkość wiatru</p>
+                                <h1 class="actualWindSpeed"></h1>
+                            </div>
+                        </div>
+                        <div class="rainChanse">
+                            <div class="rainChanseIcoBox">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="rainChanseInfoBox">
+                                <p>Wilgotność</p>
+                                <h1 class="actualHumidity"></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pressureUv">
+                        <div class="pressure">
+                            <div class="pressureIcoBox">
+                                <i class="fa-solid fa-wave-square"></i>
+                            </div>
+                            <div class="pressureInfoBox">
+                                <p>Ciśnienie</p>
+                                <h1 class="actualPressure"></h1>
+                            </div>
+                        </div>
+                        <div class="uvIndex">
+                            <div class="uvIndexIcoBox">
+                                <i class="fa-solid fa-temperature-half"></i>
+                            </div>
+                            <div class="uvIndexInfoBox">
+                                <p>Temperatura</p>
+                                <h1 class="actualTemperature"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerMainSecondBox">
+                    <div class="weatherForecastBox"><h3>Przypadkowa ciekawostka</h3></div>
+                    <div class="forecastCards">
+                        <div class="card firstDay">
+                            <h1 class="dayFirstDate">Ciekawostka na ten piękny dzień</h1>
+                            <!-- <p><span><i class="fa-solid fa-cloud-sun-rain"></i></span></p> -->
+                            <p class="paraRandomFact"></p>
+                        </div>
+                        <!-- <div class="card secondDay">
+                            <h1 class="daySecondDate">Jutro</h1>
+                            <img src="" alt="ikonkaPogodowa" class="actualIconImageSecond" width="75px" height="75px">
+                            <p class="daySecondTemperature">8°C</p>
+                        </div>
+                        <div class="card thirdDay">
+                            <h1 class="dayThirdDate">Pojutrze</h1>
+                            <img src="" alt="ikonkaPogodowa" class="actualIconImageThird" width="75px" height="75px">
+                            <p class="dayThirdTemperature">13°C</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightMainDiv">
+            <div class="rightHeaderBox">
+                <div class="cityNameBox">
+                    <h1 class="cityName">Lublin</h1>
+                    <p>Polska</p>
+                </div>
+                <div class="Hour">
+                    <h2 class="actualHour"></h2>
+                </div>
+            </div>
+            <div class="weatherAtTheMoment">
+                <h1 class="actualTemp"></h1>
+                <span><img src="" alt="ikonkaPogodowa" class="actualIcon" width="75px" height="75px"></span>
+                <p class="actualWeatherStatus"></p>
+            </div>
+
+            <div class="rightLastCards">
+
+                <div class="card sunrise">
+                    <div class="sunriseIco">
+                        <span><i class="fa-solid fa-sun"></i></span> 
+                    </div>
+                    <div class="cardTitle">
+                        <p>Wschód słońca</p>
+                    </div>
+                    <div class="cardInfoFromAPI">
+                        <p class="sunriseTime"></p>
+                    </div>
+                </div>
+                <div class="card sunset">
+                    <div class="suntetIco">
+                        <span><i class="fa-regular fa-sun"></i></span> 
+                    </div>
+                    <div class="cardTitle">
+                        <p>Zachód słońca</p>
+                    </div>
+                    <div class="cardInfoFromAPI">
+                        <p class="sunsetTime"></p>
+                    </div>
+                </div>
+                <div class="card tempMin">
+                    <div class="tempMinIco">
+                        <span><i class="fa-solid fa-temperature-low"></i></span> 
+                    </div>
+                    <div class="cardTitle">
+                        <p>Temperatura minimalna</p>
+                    </div>
+                    <div class="cardInfoFromAPI">
+                        <p class="minTemp"></p>
+                    </div>
+                </div>
+                <div class="card tempMax">
+                    <div class="tempMaxIco">
+                        <span><i class="fa-solid fa-temperature-high"></i></span> 
+                    </div>
+                    <div class="cardTitle">
+                        <p>Temperatura maksymalna</p>
+                    </div>
+                    <div class="cardInfoFromAPI">
+                        <p class="maxTemp"></p>
+                    </div>
+                </div>
+                <div class="card tempFeelsLike">
+                    <div class="tempFeelsLikeIco">
+                        <span><i class="fa-solid fa-person"></i></span> 
+                    </div>
+                    <div class="cardTitle">
+                        <p>Temperatura odczuwalna</p>
+                    </div>
+                    <div class="cardInfoFromAPI">
+                        <p class="feelsTemp"></p>
+                    </div>
+                </div>
+                <div class="card cloudiness">
+                    <div class="cloudinessIco">
+                        <span><i class="fa-solid fa-cloud"></i></span> 
+                    </div>
+                    <div class="cardTitle">
+                        <p>Procent zachmurzenia</p>
+                    </div>
+                    <div class="cardInfoFromAPI">
+                        <p class="cloudsPercent"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authorDiv">
+                <p>2022 © Design & Code by <a href="https://github.com/Dziobdziak" target="_blank">Mateusz Dziopak</a> Powered by <a href="https://openweathermap.org/api" target="_blank">OpenWeather</a></p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
